@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Progress } from "@/components/ui/progress";
-import { Clock, Zap, Trophy, Users } from "lucide-react";
+import { Clock, Zap, Trophy, Users, Sparkles } from "lucide-react";
 import { challenges, opponents, aiFeedback } from "@/lib/mockData";
 import confetti from "canvas-confetti";
 import Link from "next/link";
