@@ -38,11 +38,11 @@ It’s not just a game. It’s a **playground for AI literacy** — built for ha
 
 ## 🧩 Tech Stack
 
-**Frontend:** React + Vite + TailwindCSS
-**Backend:** Flask / FastAPI (Python)
-**AI APIs:** OpenAI GPT-4o, Claude, Gemini
-**Database:** Firebase / Supabase
-**Real-time Engine:** Socket.io
+* **Frontend:** React + Vite + TailwindCSS
+* **Backend:** Flask / FastAPI (Python)
+* **AI APIs:** OpenAI GPT-4o, Claude, Gemini
+* **Database:** Firebase / Supabase
+* **Real-time Engine:** Socket.io
 
 Together, this stack delivers a **fast, real-time, multiplayer AI experience** that feels like gaming — but teaches something valuable.
 
