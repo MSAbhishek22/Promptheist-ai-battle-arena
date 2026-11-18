@@ -9,7 +9,7 @@
 ## 🚀 About the Project
 
 **PromptHeist** is a real-time **AI Battle Arena** where players compete to craft the most powerful prompts.
-Two users enter, both receive the same challenge — and their prompts face off. The AI (GPT-4o / Claude / Gemini) judges both responses and crowns a winner based on creativity, clarity, and context relevance.
+Two users enter, both receive the same challenge — and their prompts face off. The AI judges both responses and crowns a winner based on creativity, clarity, and context relevance.
 
 We built PromptHeist to make **learning prompt engineering fun, social, and competitive** — because why should learning AI feel boring?
 
@@ -28,23 +28,42 @@ It’s not just a game. It’s a **playground for AI literacy** — built for ha
 ## ✨ Core Features
 
 * ⚔️ **1v1 Live Battles:** Compete against real users in timed AI prompt duels.
-* 🤖 **AI Judges:** GPT-4o or Gemini evaluate and score prompts instantly.
+* 🤖 **AI Judges:** AI evaluates and scores prompts instantly.
 * 🧩 **Dynamic Challenges:** Endless fun with auto-generated battle topics.
-* 🏆 **Leaderboard:** Firebase-powered real-time ranking of top prompt masters.
+* 🏆 **Leaderboard:** Real-time ranking of top prompt masters.
 * 🌗 **Day/Night Mode UI:** Smooth, aesthetic design with React + TailwindCSS.
 * ⏱️ **Timer & Instant Results:** Feel the adrenaline of live competition.
+
+> Honest note: the AI-judge and live-multiplayer features above describe the product's design — the dependencies installed in this repo (`package.json`) do not yet include an AI-provider SDK or a realtime engine, so those integrations are still to be wired in.
 
 ---
 
 ## 🧩 Tech Stack
 
-* **Frontend:** React + Vite + TailwindCSS
-* **Backend:** Flask / FastAPI (Python)
-* **AI APIs:** OpenAI GPT-4o, Claude, Gemini
-* **Database:** Firebase / Supabase
-* **Real-time Engine:** Socket.io
+* **Frontend:** Next.js 15 (Turbopack) + React + TypeScript + Tailwind CSS
+* **UI:** shadcn/ui (Radix UI), Framer Motion, Recharts, Three.js (`@react-three/fiber` / `drei`)
+* **Data:** Drizzle ORM + libSQL
+* **Auth:** better-auth
+* **Billing:** Stripe (via autumn-js)
 
-Together, this stack delivers a **fast, real-time, multiplayer AI experience** that feels like gaming — but teaches something valuable.
+---
+
+## 🚀 How to Run
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Other scripts:
+
+```bash
+npm run build  # production build
+npm run start  # serve the production build
+npm run lint   # lint
+```
 
 ---
 
@@ -84,4 +103,3 @@ Think of it as the **Duolingo of AI prompting** — fast, competitive, and commu
 PromptHeist isn’t just a project — it’s a glimpse into the **future of AI learning**.
 It turns curiosity into competition, and creativity into skill.
 So get ready to **steal the spotlight, one prompt at a time.**
-
